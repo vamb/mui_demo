@@ -1,7 +1,8 @@
+import React from "react";
 import styled from "@emotion/styled";
 import UnitContent from "../../component/UnitContent";
 import { Button, Stack, Box } from '@mui/material';
-import React from "react";
+import { Delete, Send } from '@mui/icons-material'
 
 const Demo2 = () => {
   return (
@@ -67,6 +68,14 @@ const Demo2 = () => {
           <div>
             <Button variant="contained" size="large">Large</Button>
           </div>
+        </Stack>
+        <Stack direction="row" spacing={2}>
+          <Button variant="outlined" startIcon={<Delete />}>
+            Delete
+          </Button>
+          <Button variant="contained" endIcon={<Send />}>
+            Send
+          </Button>
         </Stack>
       </Wrapper>
     </UnitContent>

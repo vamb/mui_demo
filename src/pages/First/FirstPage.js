@@ -3,6 +3,7 @@ import styled from "styled-components";
 import FirstConstant from "./FirstConstant";
 import Demo1 from "./component/Demo1";
 import Demo2 from './component/Demo2'
+import Demo3 from './component/Demo3'
 import { Tabs, Tab, Typography, Box } from '@mui/material'
 
 const TabPanel =(props)=> {
@@ -73,6 +74,7 @@ const FirstPage = () => {
         </TabPanel>
         <TabPanel value={activeKey} key={`mui-first-tabPanel-opt-${1}`} index={1}>
           <Demo2 />
+          <Demo3 />
         </TabPanel>
       </Box>
     </Wrapper>
