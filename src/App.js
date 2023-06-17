@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import styled from 'styled-components'
-import Demo1 from "./pages/First/Demo1";
+import First from "./pages/First";
 
 function App() {
   const [ pageSize, setPageSize ] = useState({ width: document.body.scrollWidth, height: document.body.scrollHeight })
@@ -43,7 +43,7 @@ function App() {
         </div>
         <div className={'page-content'} style={{width: `${pageSize.width}px`, padding: '20px'}}>
           <div className={'content-shield'} style={{width: `${pageSize.width}px`, padding: '20px'}}>
-            <Route path="/first" exact component={Demo1} />
+            <Route path="/first" exact component={First} />
           </div>
         </div>
       </Router>
