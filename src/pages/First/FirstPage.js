@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import styled from "styled-components";
 import FirstConstant from "./FirstConstant";
+import { Tabs, Tab, Typography, Box } from '@mui/material'
 import Demo1 from "./component/Demo1";
 import Demo2 from './component/Demo2'
 import Demo3 from './component/Demo3'
 import Demo4 from './component/Demo4'
 import Demo5 from "./component/Demo5";
 import Demo6 from './component/Demo6'
-import { Tabs, Tab, Typography, Box } from '@mui/material'
+import Demo7 from './component/Demo7'
+import Demo8 from './component/Demo8'
+import Demo9 from './component/Demo9'
+import Demo10 from "./component/Demo10";
 
 const TabPanel =(props)=> {
   const { children, value, index, ...other } = props;
@@ -55,7 +59,6 @@ const FirstPage = () => {
             value={activeKey}
             aria-label="basic tabs example"
             onChange={(event, newValue)=>{
-              console.log('newValue', newValue)
               updateActiveKey(newValue)
             }}
           >
@@ -83,7 +86,10 @@ const FirstPage = () => {
           <Demo6 />
         </TabPanel>
         <TabPanel value={activeKey} key={`mui-first-tabPanel-opt-${2}`} index={2}>
-
+          <Demo7 />
+          <Demo8 />
+          <Demo9 />
+          <Demo10 />
         </TabPanel>
       </Box>
     </Wrapper>

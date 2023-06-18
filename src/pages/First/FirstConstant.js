@@ -7,13 +7,15 @@ FirstConstant.STORE_KEY = 'FIRST_PAGE_STORE_KEY'
 FirstConstant.TAB_LIST = [
   { label: 'AutoComplete', key: 'autoComplete_key' },
   { label: 'Button', key: 'button_key' },
-  { label: 'ButtonGroup', key: 'button_group_key' },
+  { label: 'Checkbox', key: 'checkbox_key' },
+  { label: 'Radio', key: 'radio_key' },
 ]
 
 FirstConstant.TAB_MAP = {
   AUTOCOMPLETE: { label: 'AutoComplete', key: 'autoComplete_key' },
   BUTTON: { label: 'Button', key: 'button_key' },
-  BUTTON_GROUP: { label: 'ButtonGroup', key: 'button_group_key' },
+  CHECKBOX: { label: 'Checkbox', key: 'checkbox_key' },
+  RADIO: { label: 'Radio', key: 'radio_key' },
 }
 
 FirstConstant.top100Films = [
