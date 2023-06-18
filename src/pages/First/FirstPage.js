@@ -4,6 +4,9 @@ import FirstConstant from "./FirstConstant";
 import Demo1 from "./component/Demo1";
 import Demo2 from './component/Demo2'
 import Demo3 from './component/Demo3'
+import Demo4 from './component/Demo4'
+import Demo5 from "./component/Demo5";
+import Demo6 from './component/Demo6'
 import { Tabs, Tab, Typography, Box } from '@mui/material'
 
 const TabPanel =(props)=> {
@@ -75,6 +78,12 @@ const FirstPage = () => {
         <TabPanel value={activeKey} key={`mui-first-tabPanel-opt-${1}`} index={1}>
           <Demo2 />
           <Demo3 />
+          <Demo4 />
+          <Demo5 />
+          <Demo6 />
+        </TabPanel>
+        <TabPanel value={activeKey} key={`mui-first-tabPanel-opt-${2}`} index={2}>
+
         </TabPanel>
       </Box>
     </Wrapper>
